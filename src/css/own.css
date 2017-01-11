@@ -1,0 +1,166 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	font-size: 100px;
+}
+body{
+	width: 100%;
+	font-size: 0.1rem;
+	font-family: "微软雅黑",arial ;
+	background: #eeeef0;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+li{
+	list-style: none;
+}
+header{
+	width: 100%;
+	height: 1.58rem;
+	background: #ffd600;
+	position: fixed;
+	top: 0;
+}
+.headertop{
+	width: 100%; 
+	height: 70%;
+	padding-left: 0.2rem;
+	padding-top: 0.1rem;
+	display: flex;
+	align-items:  center;
+}
+.headertop img{
+	width: 20%;
+	height: 75%;
+	vertical-align: middle;
+	display: inline-block;
+}
+.headertop div{
+	width: 65%;
+	height: 90%;
+	padding: 2%;
+	color: white;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+}
+.headertop div p{
+	font-size: 14px;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	/*margin-bottom: 0.2rem;*/
+}
+.headertop div p:nth-of-type(2){
+	background: url(../images/main-level.png) no-repeat left top;
+	background-size: 50% 100%;
+	text-indent: 18%;
+	color: red;
+}
+.headertop span{
+	width: 10%;
+	text-align: right;
+}
+.headertop>span img{
+	width: 50%;
+}
+.headerbtm{
+	height: 30%;
+	color: white;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	background: #f3c800;
+	padding: 0.05rem;
+}
+.headerbtm p{
+	width: 50%;
+	text-align: center;
+}
+.headerbtm p:nth-of-type(1){
+	border-right: 2px solid white;
+}
+.headerbtm p img{
+	width: 15%;
+	vertical-align: middle;
+	margin-right: 0.1rem;
+}
+.myorder{
+	width: 100%;
+	background: white;
+	margin: 0.1rem 0;
+	margin-top: 1.68rem;
+}
+.myorder>p{
+	line-height: 0.5rem;
+	font-size: 14px;
+	padding-left: 0.25rem;
+	padding-right: 0.1rem;
+	border-bottom: 2px solid #e0e0e0;
+}
+.myorder>p>span,.myorder>p>span>a{
+	font-size: 13px;
+	color: #999999;
+	float: right;
+}
+.myorder ul{
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	padding: 0.2rem 0;
+}
+.myorder ul li img{
+	width: 40%;
+}
+.myfunction{
+	width: 100%;
+	background: white;
+}
+.myfunction ul{
+	display: flex;
+	justify-content: space-around;
+	text-align: center;	
+	border-bottom: 2px solid #e0e0e0;
+}
+.myfunction ul li{
+	width: 25%;
+	padding: 0.2rem 0;
+	/*border: 1px solid red;*/
+}
+.myfunction ul li img{
+	width: 50%
+}
+.exit{
+	text-align: center;
+	font-size: 18px;
+	background: white;
+	line-height: 0.6rem;
+	margin-top: 0.4rem;
+	margin-bottom: 0.62rem;
+}
+
+
+footer{
+	width: 100%;
+	height: 0.62rem;
+	position: fixed;
+	bottom: 0;
+	background: #f7f6f6;
+	padding: 0.05rem 0.1rem;
+	display: flex;
+	justify-content: space-between;
+}
+footer a{
+	width: 18%;
+	display: flex;	
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+footer a img{
+	width: 56%;
+}

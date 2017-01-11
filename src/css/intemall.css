@@ -1,0 +1,118 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	font-size: 100px;
+}
+body{
+	width: 100%;
+	font-size: 0.1rem;
+	font-family: "微软雅黑",arial ;
+	background: #eeeef0;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+li{
+	list-style: none;
+}
+header{
+	width: 100%;
+	height: 0.65rem;
+	background: #f9fafd;
+	padding: 0.1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+	border-bottom: 2px solid #e0e0e0;
+}
+header p{
+	font-size: 20px;	
+}
+header div{
+	width: 12%;
+	text-align: center;
+}
+header div img{
+	width: 60%;
+}
+.integral{
+	width: 100%;
+	height: 2rem;
+	margin-top: 0.65rem;
+	border-bottom: 2px solid #e0e0e0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.integral div{
+	width: 1.5rem;
+	height:1.5rem;
+	border: 0.2rem solid #ef592a;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.integral div div{
+	width: 100%;
+	height:100%;
+	background: white;
+	border: 0.1rem solid #e13600;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	flex-flow: column wrap;
+	align-items: center;
+	color: #999999;
+	font-size: 14px;
+}
+.integral div div p{
+	color: red;
+}
+.intemenu{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 0.1rem;
+}
+.intemenu div{
+	width: 33%;
+	background: white;
+	text-align: center;
+	padding: 0.1rem 0;
+	color: #999999;
+}
+.intemenu div img{
+	width: 30%;
+	margin-bottom: 0.05rem;
+}
+.inteshow{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+}
+.inteshow div{
+	width: 49.5%;
+	padding: 0.1rem;
+	background: white;
+	border-bottom: 2px solid #e0e0e0;
+	text-align: center;
+}
+.inteshow div img{
+	width: 100%;
+}
+.inteshow div p{
+	line-height: 0.25rem;
+	text-align: left;
+}
+.inteshow div p:nth-of-type(2){
+	color: red;
+}

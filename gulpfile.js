@@ -10,7 +10,7 @@ var gulp=require("gulp"),
 gulp.task("webserver",function(){
 	gulp.src('./dist').pipe(webserver({
 		livereload:true,
-		open:true
+		open:'html/ifeng.html#/home'
 	}))
 });
 // html任务：
@@ -33,18 +33,18 @@ gulp.task("script",function(){
 		.pipe(gulp.dest("dist"))
 })
 //压缩图片
-/*gulp.task("image",function(){
-	return gulp.src("src/images/*.{png,jpg,gif,svg}")
+gulp.task("image",function(){
+	return gulp.src("src/**/*.{png,jpg,gif,svg}")
 		.pipe(imagemin({progressive:true,
 						use:[pngquant()]
 		})) //无损压缩
-		.pipe(gulp.dest("dist/images"))
-})*/
+		.pipe(gulp.dest("dist"))
+})
 
 // 监听任务：
 gulp.task("watch",function(){
-	gulp.watch("*.html",["html"]);//监听根目录下所有的html
+	gulp.watch("html/*.html",["html"]);//监听根目录下所有的html
 });
 
 //默认执行任务：
-gulp.task("default",['css',"webserver","html","script","watch"]);
+gulp.task("default",['css','image',"webserver","html","script","watch"]);

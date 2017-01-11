@@ -1,0 +1,62 @@
+<link rel="stylesheet" type="text/css" href="../css/miaosha.css"/>
+		<header>
+			<div >
+				<a href="#/home"><img src="../images/return.png"/></a>
+			</div>
+			<p>疯狂秒杀</p>
+			<div >
+				<a href="#/seckill">
+					<img src="../images/refresh.png"/>
+				</a>			
+			</div>
+		</header>
+		
+		<div class="buy" ng-controller="killCtrl">
+			<div class="buybanner">
+				<img src="../images/super-buy.jpg"/>
+			</div>
+			
+			<ul>
+				<li>
+					<span>10:00</span>
+					<span>已结束</span>
+					<span><img src="../images/down_03.png"/></span>
+				</li>
+				<li>
+					<span>12:00</span>
+					<span>已结束</span>
+					<span><img src="../images/down_03.png"/></span>
+				</li>
+				<li class="nowbuy">
+					<span>15:00</span>
+					<span>正在抢购</span>
+					<span><img src="../images/down_01.png"/></span>
+				</li>
+				<li>
+					<span>19:00</span>
+					<span>即将开始</span>
+					<span><img src="../images/down_03.png"/></span>
+				</li>
+			</ul>
+			
+			<div class="timewrap">
+				<span>距离本场结束</span><span>查看活动规则</span>
+			</div>
+			<div class="buylist" ng-repeat="sec in seckill">
+				<div class="buylist1">
+					<img ng-src={{sec['img']}} alt="" />
+				</div>
+				<div class="buylist2">
+					<p>{{sec['name']}}</p>
+					<p>{{sec['specifics']}}</p>
+					<p>￥{{sec['price']}}<span>原价：{{sec['market_price']}}元</span></p>
+					<p><span ng-click="" ng-class="addcolor(sec['btnText'])">{{sec['btnText']}}</span></p>
+				</div>
+			</div>
+			<span id="cart"><img src="../images/shopping-cart.png"/></span>
+		</div>
+		
+	</body>
+	<script src="../js/miaosha.js" type="text/javascript" charset="utf-8"></script>
+	
+

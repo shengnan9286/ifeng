@@ -1,0 +1,32 @@
+var app=angular.module("homeApp",['ngRoute']);
+app.constant('baseUrl','http://localhost:4320')
+.config(function($routeProvider,$locationProvider){
+	//设置angualr新旧版本路有冲突
+	$locationProvider.html5Mode(false).hashPrefix('');
+	//设置路由：
+	$routeProvider
+	.when('/home',{
+		templateUrl:"/html/home.html"
+	})
+	.when('/seckill',{
+		templateUrl:"/html/miaosha.html"
+	})
+	.when('/market',{
+		templateUrl:"/html/surpermarket.html"
+	})
+	.when('/reverse',{
+		templateUrl:"/html/reserve.html"
+	})
+	.when('/cart',{
+		templateUrl:"/html/cart.html"
+	})
+	.when('/own',{
+		templateUrl:"/html/own.html"
+	})
+	.when('/order',{
+		templateUrl:"/html/order.html"
+	})
+	.when('/integral',{
+		templateUrl:"/html/intemall.html"
+	})
+})	

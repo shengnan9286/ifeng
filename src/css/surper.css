@@ -1,0 +1,187 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	font-size: 100px;
+}
+body{
+	width: 100%;
+	font-size: 0.1rem;
+	font-family: "微软雅黑",arial ;
+	background: #efefef;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+li{
+	list-style: none;
+}
+header{
+	width: 100%;
+	height: 0.65rem;
+	background: #ffd600;
+	padding: 0.1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+}
+header p{
+	font-size: 20px;
+	
+}
+header div{
+	width: 11%;
+	text-align: center;
+	/*border: 1px solid red;*/
+}
+header div img{
+	width: 60%;
+}
+
+
+.content{
+	width: 100%;
+	/*border: 1px solid blue;*/
+	position: relative;	
+	margin-top: 0.65rem;
+	margin-bottom: 0.62rem;
+}
+/*leftmenu*/
+.leftmenu{
+	width: 25%;
+	height: 80%;
+	background: #f8f8f8;
+	overflow: auto;
+	position: fixed;
+}
+.leftmenu ul{
+	width: 100%;
+}
+.leftmenu li{
+	width: 100%;	
+	text-align: center;
+	border-bottom: 1px solid #e0e0e0;
+}
+.leftmenu li a{
+	display: block;
+	padding: 0.15rem 0 ;
+	font-size: 13px;
+}
+.content .rightlist{
+	width: 75%;
+	background: white;
+	padding-left: 0.05rem;
+	position: relative;
+	float: right;
+}
+.content .rightlist>p{
+	width: 75%;
+	line-height: 0.45rem;
+	font-size: 15px;
+	color: #7c7c7c;
+	background: rgba(255,255,255,0.9);
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 2px solid #f3f3f3;
+	position: fixed;
+	z-index: 3;
+}
+.rightmain{
+	width: 100%;	
+	margin-top: 0.45rem;
+}
+.rightlist .listItem{
+	width: 100%;	
+	display: flex;
+	border-bottom: 2px solid #f3f3f3;
+	
+}
+.listItem div p{
+	margin-bottom: 0.03rem;
+}
+
+.listItem div:nth-of-type(1){
+	width: 35%;
+}
+.listItem div:nth-of-type(1) img{
+	width: 100%;
+	height: 100%;
+}
+.listItem div:nth-of-type(2){
+	width: 65%;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	position: relative;
+}
+.listItem div p a{
+	font-size: 13px;
+}
+.listItem div p:nth-of-type(2) span{
+	border-radius: 0.05rem;
+	padding: 0.02rem;
+	margin-right: 0.1rem;
+}
+.listItem div p .goodopt1{
+	color: red;
+	border:1px solid red ;
+}
+.listItem div p .goodopt2{
+	color: white;
+	background: red;
+}
+.listItem div p:nth-of-type(3) {
+	color: #b2b2b2;
+}
+.listItem div p:nth-of-type(4) {
+	color: #b2b2b2;
+}
+.listItem div p .goodprice1{
+	color: red;
+	margin-right: 0.1rem;
+}
+.listItem div p .goodprice2{
+	text-decoration: line-through;
+}
+.listItem .addbtn{
+	position: absolute;
+	bottom: 0.05rem;
+	right: 0.1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*border: 1px solid red ;*/
+}
+.listItem .addbtn span{
+	margin-right: 0.1rem;
+}
+
+
+
+footer{
+	width: 100%;
+	height: 0.62rem;
+	position: fixed;
+	bottom: 0;
+	background: #f7f6f6;
+	padding: 0.05rem 0.1rem;
+	display: flex;
+	justify-content: space-between;
+}
+footer a{
+	width: 18%;
+	display: flex;	
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+footer a img{
+	width: 56%;
+}

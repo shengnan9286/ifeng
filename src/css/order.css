@@ -1,0 +1,75 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	font-size: 100px;
+}
+body{
+	width: 100%;
+	font-size: 0.1rem;
+	font-family: "微软雅黑",arial ;
+	background: #eeeef0;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+li{
+	list-style: none;
+}
+header{
+	width: 100%;
+	height: 0.65rem;
+	background: #f9fafd;
+	padding: 0.1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+	border-bottom: 2px solid #e0e0e0;
+}
+header p{
+	font-size: 20px;	
+}
+header div{
+	width: 12%;
+	text-align: center;
+}
+header div img{
+	width: 60%;
+}
+.orderlist{
+	width: 100%;
+	margin-top:0.65rem;
+	
+}
+.orderlist ul{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	background: white;
+}
+.orderlist ul li{
+	width: 20%;
+	text-align: center;	
+}
+.orderlist ul li a{
+	display: block;
+	font-size: 13px;
+	padding: 0.15rem 0;
+}
+.orderempty {
+	width: 100%;
+	color:#999 ;
+	text-align: center;
+	font-size: 15px;
+	padding-top: 0.8rem;
+}
+.orderempty img{
+	width: 25%;
+}

@@ -1,29 +1,139 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-		<link rel="stylesheet" type="text/css" href="../css/home.css"/>
-	</head>
-	<body>
-		<header>
-			<div class="">
-				<a href="#">
-					<img src="../images/scan.jpg"/>
-				</a>
-				<span>扫一扫</span>
-			</div>
-			<p>点击查看位置</p>
-			<div class="">
-				<a href="#">
-					<img src="../images/index_search.png"/>
-				</a>
-				<span>搜索</span>
-			</div>
-		</header>
+<link rel="stylesheet" type="text/css" href="../css/home.css"/>	
+<link rel="stylesheet" type="text/css" href="../js/com/swiper-3.4.0.min.css"/>
+	<header>
 		<div class="">
-			wwwww
+			<a href="">
+				<img src="../images/scan.jpg"/>
+			</a><br />
+			<span>扫一扫</span>
 		</div>
-	</body>
-</html>
+		<p>点击查看位置</p>
+		<div class="">
+			<a href="">
+				<img src="../images/index_search.png"/>
+			</a><br />
+			<span>搜索</span>
+		</div>
+	</header>
+		
+<!--轮播图-->
+		<div class="swiper-container swiper1">
+			<div class="swiper-wrapper">
+	            <div class="swiper-slide"><img src="../images/1.jpg"/></div>
+	            <div class="swiper-slide"><img src="../images/2.jpg"/></div>
+	            <div class="swiper-slide"><img src="../images/3.jpg"/></div>
+	            <div class="swiper-slide"><img src="../images/4.jpg"/></div>
+	            <div class="swiper-slide"><img src="../images/5.jpg"/></div>
+	            <div class="swiper-slide"><img src="../images/6.jpg"/></div>
+	        </div>
+	        <div class="swiper-pagination"></div>
+		</div>
+<!--分类区-->
+		<div class="classify">
+			<dl>
+				<dt><a href="###"><img src="../images/c1.png"/></a></dt>
+				<dd><a href="###">抽奖</a></dd>
+			</dl>
+			<dl>
+				<dt><a href="#/seckill"><img src="../images/c2.jpg"/></a></dt>
+				<dd><a href="#/seckill">疯狂秒杀</a></dd>
+			</dl>
+			<dl>
+				<dt><a href="###"><img src="../images/c3.png"/></a></dt>
+				<dd><a href="###">鲜活直供</a></dd>
+			</dl>
+			<dl>
+				<dt><a href="###"><img src="../images/c4.png"/></a></dt>
+				<dd><a href="###">大闸蟹</a></dd>
+			</dl>
+			<dl>
+				<dt><a href="###"><img src="../images/c5.png"/></a></dt>
+				<dd><a href="###">水果</a></dd>
+			</dl>
+			<dl>
+				<dt><a href="###"><img src="../images/c6.png"/></a></dt>
+				<dd><a href="###">乳品</a></dd>
+			</dl>
+			<dl>
+				<dt><a href="###"><img src="../images/c7.png"/></a></dt>
+				<dd><a href="###">卤味</a></dd>
+			</dl>
+			<dl>
+				<dt><a href="###"><img src="../images/c8.png"/></a></dt>
+				<dd><a href="###">零食</a></dd>
+			</dl>
+		</div>
+<!--鲜蜂头条-->
+		<div class="headline">
+			<span><img src="../images/headline.jpg"/></span>
+			<div class="swiper-container swiper2">
+		        <div class="swiper-wrapper">
+		            <div class="swiper-slide"><p><span>防霾</span>3M防霾口罩22.8元/3只 1小时闪送</p></div>
+		            <div class="swiper-slide"><p><span>剁手</span>淘宝双十一 你不剁手谁剁手</p></div>
+		            <div class="swiper-slide"><p><span>买买买</span>不倾国不倾城，只让你倾家荡产</p></div>
+		        </div>
+		    </div>
+		</div>
+		<div class="hotproduct">
+			<div><img src="../images/sale1.jpg"/></div>
+			<div><img src="../images/sale2.jpg"/></div>
+			<div><img src="../images/sale3.jpg"/></div>
+		</div>
+		<div class="hotproduct2">
+			<div><img src="../images/sales1.jpg"/></div>
+			<div><img src="../images/sales2.jpg"/></div>
+			<div><img src="../images/sales3.jpg"/></div>
+			<div><img src="../images/sales4.jpg"/></div>
+		</div>
+<!--优选产品-->
+		<div class="goodproduct">
+			<div class="goodproduct_p">
+				<p>优选水果<span>更多></span></p>
+				<img src="../images/y.png"/>
+			</div>
+			<div class=" goodfruit">
+				<div>
+					<img src="../images/good-fruit1.jpg"/>
+					<p><a href="">蜂觅·15度蜜梨</a></p>
+					<p><span class="goodopt1">精选</span><span class="goodopt2">买一赠一</span></p>
+					<p><span>400-500g/盒</span></p>
+					<p><span class="goodprice1">￥7.9</span><span class="goodprice2">￥16</span></p>
+				</div>
+				<div>
+					<img src="../images/good-fruit2.jpg"/>
+					<p><a href="">爱鲜蜂·徐香猕猴桃</a></p>
+					<p><span class="goodopt1">精选</span><span class="goodopt2">买一赠一</span></p>
+					<p><span>285g 3粒/盒</span></p>
+					<p><span class="goodprice1">￥16.9</span><span class="goodprice2">￥26</span></p>
+				</div>
+				<div>
+					<img src="../images/good-fruit3.jpg"/>
+					<p><a href="">爱鲜蜂`赣南蜜桔</a></p>
+					<p><span class="goodopt1">精选</span></p>
+					<p><span>800-900g/袋</span></p>
+					<p><span class="goodprice1">￥6.8</span><span class="goodprice2">￥8.5</span></p>
+				</div>
+			</div>
+		</div>
+		
+<!--商品详情列表-->
+		<div class="goodfruit productlist" ng-controller="getDataCtrl">
+			<div ng-repeat="hotItem in hot">
+				<img ng-src={{hotItem['img']}}/>
+				<p><a href="">{{hotItem['name']}}</a></p>
+				<p><span class="goodopt1">精选</span><span class="goodopt2" ng-hide="hotItem['pm_desc']==''">{{hotItem['pm_desc']}}</span></p>
+				<p><span>{{hotItem['specifics']}}</span></p>
+				<p><span class="goodprice1">￥{{hotItem['price']}}</span><span class="goodprice2">￥{{hotItem['market_price']}}</span></p>
+				<p class="addbtn"><span ng-click="removepro(hotItem)" ng-if="counts(hotItem['name'])"><img src="../images/n27.png"/></span><span ng-if="counts(hotItem['name'])">{{counts(hotItem['name'])}}</span><span ng-click="addpro(hotItem)"><img src="../images/n26.png"/></span></p>
+			</div>		
+		</div>		
+<!--footer-->
+		<footer>
+			<a href="#/home"><img src="../images/footer-1.png" alt="" /><span>首页</span></a>
+			<a href="#/market"><img src="../images/footer-2.png" alt="" /><span>闪送超市</span></a>
+			<a href="#/reverse"><img src="../images/footer-3.png" alt="" /><span>新鲜预定</span></a>
+			<a href="#/cart"><img src="../images/footer-4.png" alt="" /><span>购物车</span></a>
+			<a href="#/own"><img src="../images/footer-5.png" alt="" /><span>我的</span></a>
+		</footer>
+
+
